@@ -1,1 +1,139 @@
 @charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 전체 레이아웃 */
+.container {
+  width: 1200px;
+  height: 1000px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+/* 상단 */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #045;
+}
+/* 로고 */
+.logo {
+  width: 250px;
+  background-color: aqua;
+  float: left;
+}
+.logo h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 100px;
+  text-align: center;
+}
+/* 메뉴 */
+nav {
+  position: relative;
+  width: 900px;
+  background-color: rgb(255, 189, 189);
+  float: right;
+  height: 100%;
+}
+#topMenu {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: calc(100% - 100px);
+  height: 60px;
+  margin-top: 40px;
+  background-color: tomato;
+}
+#topMenu li a {
+  width: calc(100% / 4);
+  /* float: left는 display: inline block */
+  float: left;
+  /* height: 60px; */
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: skyblue;
+}
+/* #topMenu li:hover{
+    background-color: rgb(33, 90, 112);
+} */
+#topMenu li:hover a {
+  color: pink;
+  background-color: rgb(33, 90, 112);
+}
+/* 메인 */
+.contents {
+  width: 100%;
+  height: 800px;
+  background-color: cornflowerblue;
+}
+/* healing */
+.healing {
+  width: 100%;
+  height: calc(100% / 2);
+  background-color: thistle;
+}
+.healing h2 {
+  background-color: rgb(123, 135, 242);
+}
+.description {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(252, 4, 4);
+}
+.des-img {
+  float: left;
+  width: 450px;
+  height: 100%;
+  background-color: chocolate;
+}
+.des-detail {
+  float: left;
+  width: calc(100% - 450px);
+  height: 100%;
+  background-color: rgb(43, 39, 147);
+}
+.detail-top {
+  height: calc(100% / 2);
+  background-color: seagreen;
+}
+.detail-bottom {
+  height: calc(100% / 2);
+  background-color: rgb(25, 89, 68);
+}
+/* activity */
+.activity {
+  width: 100%;
+  height: calc(100% / 2);
+  background-color: rgb(205, 239, 146);
+}
+/* .top {
+  width: 100%;
+  height: 500px;
+  background-color: #deffb6;
+}
+.bottom {
+  height: 500px;
+  background-color: darkgrey;
+}
+img {
+  width: 450px;
+  float: left;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+} */
+/* 하단 */
