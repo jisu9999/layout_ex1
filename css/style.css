@@ -28,7 +28,7 @@ a {
 /* 로고 */
 .logo {
   width: 250px;
-  background-color: aqua;
+  /* background-color: aqua; */
   float: left;
 }
 .logo h1 {
@@ -42,7 +42,7 @@ a {
 nav {
   position: relative;
   width: 900px;
-  background-color: rgb(255, 189, 189);
+  /* background-color: rgb(255, 189, 189); */
   float: right;
   height: 100%;
 }
@@ -77,63 +77,89 @@ nav {
 .contents {
   width: 100%;
   height: 800px;
+  padding: 40px;
   background-color: cornflowerblue;
 }
 /* healing */
 .healing {
   width: 100%;
   height: calc(100% / 2);
-  background-color: thistle;
+  /* background-color: thistle; */
 }
 .healing h2 {
-  background-color: rgb(123, 135, 242);
+  padding: 10px;
+  /* background-color: rgb(123, 135, 242); */
 }
 .description {
   width: 100%;
   height: 300px;
-  background-color: rgb(252, 4, 4);
+  padding: 20px 0;
+  /* background-color: rgb(252, 4, 4); */
 }
 .des-img {
   float: left;
   width: 450px;
   height: 100%;
-  background-color: chocolate;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background-color: chocolate; */
+}
+.des-img img {
+  width: 103%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.des-img img:hover {
+  width: 110%;
+  filter: blur(2px);
 }
 .des-detail {
   float: left;
   width: calc(100% - 450px);
   height: 100%;
-  background-color: rgb(43, 39, 147);
+  padding-left: 30px;
+  /* background-color: rgb(43, 39, 147); */
 }
 .detail-top {
   height: calc(100% / 2);
-  background-color: seagreen;
+  /* background-color: seagreen; */
+}
+.des-detail p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+.p_top {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .detail-bottom {
   height: calc(100% / 2);
-  background-color: rgb(25, 89, 68);
 }
 /* activity */
 .activity {
-  width: 100%;
   height: calc(100% / 2);
-  background-color: rgb(205, 239, 146);
+  /* background-color: rgb(205, 239, 146); */
 }
-/* .top {
-  width: 100%;
-  height: 500px;
-  background-color: #deffb6;
-}
-.bottom {
-  height: 500px;
-  background-color: darkgrey;
-}
-img {
-  width: 450px;
-  float: left;
-}
-p {
-  font-size: 20px;
-  font-weight: bold;
-} */
 /* 하단 */
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #222;
+  background-color: aliceblue;
+  padding: 20px 60px;
+}
+#bottomMenu {
+  background-color: aqua;
+}
+#bottomMenu ul {
+  background-color: aquamarine;
+}
+#bottomMenu ul li {
+  float: left;
+  padding: 0px 30px;
+  border-right: 1px solid#ddd;
+}
+#bottomMenu ul li:last-child {
+  border: none;
+}
